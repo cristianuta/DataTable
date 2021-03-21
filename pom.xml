@@ -9,7 +9,7 @@
 	<groupId>org.acme.spring</groupId>
 	<artifactId>spring-boot-primefaces-postgre-sql</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<description>Spring Boot application of example to package JSF 2.2 and Primefaces 6 using CDI minimal</description>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -56,6 +56,11 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		<!-- ADDED -->
+		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-war-plugin</artifactId>
 			<version>${maven.war.plugin.version}</version>
@@ -65,9 +70,11 @@
 			<artifactId>spring-boot-maven-plugin</artifactId>
 			<version>2.4.4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
 		</dependency>
 	</dependencies>
 	<build>
