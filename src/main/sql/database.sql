@@ -1,4 +1,3 @@
-CREATE USER tableuser WITH PASSWORD 'tableuser' CREATEDB;
 CREATE DATABASE datatable;
-GRANT ALL on database datatable TO GROUP postgres;
-GRANT postgres TO tableuser;
+CREATE USER tableuser WITH PASSWORD 'tableuser';
+GRANT ALL PRIVILEGES ON DATABASE "datatable" TO tableuser;
