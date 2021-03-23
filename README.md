@@ -14,3 +14,4 @@ chmod +x target/spring-boot-primefaces-postgre-sql-0.0.1-SNAPSHOT.jar
 java -jar target/spring-boot-primefaces-postgre-sql-0.0.1-SNAPSHOT.jar
 
 In browser, execute the link: http://localhost:9000/data-table/index.jsf
+On the internet, deployed at https://spring-boot-jsf-postgresql.herokuapp.com/data-table/index.jsf
