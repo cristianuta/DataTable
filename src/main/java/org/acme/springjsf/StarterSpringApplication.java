@@ -22,6 +22,11 @@ public class StarterSpringApplication extends SpringBootServletInitializer {
 	}
 
 	@Bean
+	public com.sun.faces.config.ConfigureListener mojarraConfigureListener() {
+		return new com.sun.faces.config.ConfigureListener();
+	}
+
+	@Bean
 	public ServletRegistrationBean servletRegistrationBean() {
         FacesServlet servlet = new FacesServlet();
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(servlet, "*.jsf");
